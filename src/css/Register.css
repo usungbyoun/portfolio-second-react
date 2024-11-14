@@ -1,0 +1,142 @@
+
+html {
+  margin: 0;
+  font-family: "Noto Sans KR", serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #333;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1.42rem;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  margin: 10px 0px;
+
+} 
+
+.login, .signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  height: 100vh;
+  
+
+}
+.login > form, .signup > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  margin-top: -40px;
+  padding: 30px 40px 40px;
+  border-radius: 2px;
+  background-color: white;
+  width: 300px;
+  height: 550px;
+  
+}
+.login > form > h1, .signup > form > h1 {
+  margin: 0 0 20px 0;
+  font-weight: bold;
+}
+.login > form > p, .signup > form > p {
+  margin: 0;
+}
+.login > form > p > label, .signup > form > p > label {
+  display: block;
+  position: relative;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 2px;
+  color: #333;
+}
+.login > form > p > label::after, .signup > form > p > label::after {
+  bottom: 0;
+  color: white;
+  content: ":";
+  position: absolute;
+  transform: translate(-100%, 0);
+}
+.login > form > p > input, .signup > form > p > input {
+  padding: 11px 0 10px 10px;
+  min-width: 250px;
+  outline: 0;
+  margin: 0 0 10px 0;
+  font-size: 13px;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  
+}
+.input {
+    width: 250px;
+    margin: 10px 0px;
+}
+.input-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.link-div {
+    display: grid;
+    place-items: center; 
+    margin-top: 20px;
+
+}
+
+.login > form > ul.errorlist, .signup > form > ul.errorlist {
+  color: red;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.login .btn-login, .login .btn-signup, .signup .btn-login, .signup .btn-signup {
+    width: 100%;
+    border: none;
+    color: white;
+    background-color: #0095f6;
+    margin-top: 10px;
+    border-radius: 4px;
+    height: 35px;
+    cursor: pointer; 
+    font-size: 15px;
+
+}
+
+  input, textarea {
+    border: none;
+    padding: 10px;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+  }
+  
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-transition: background-color 9999s ease-out;
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    -webkit-text-fill-color: #666;
+  }
